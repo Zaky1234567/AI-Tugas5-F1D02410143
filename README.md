@@ -22,13 +22,13 @@ Saya menggunakan **Forward Chaining (FC)**. Alasannya karena program ini diranca
 Berikut adalah screenshot pengujian program:
 
 **Kasus 1: Masalah Catu Daya**
-![Kasus 1] (screenshot/kasus1.png)
+![Kasus 1](screenshot/kasus1.png)
 
 **Kasus 2: Gangguan Fisik Kabel Optik**
-![Kasus 2] (screenshot/kasus2.png)
+![Kasus 2](screenshot/kasus2.png)
 
 **Kasus 3: Kasus Negatif (Tidak Ada Kesimpulan)**
-![Kasus 3] (screenshot/kasus3.png)
+![Kasus 3](screenshot/kasus3.png)
 
 **6. Batas Keberlakuan**
 Aturan berasal dari dokumentasi umum troubleshooting jaringan (Microsoft dan Telkomsel) dan hanya mencakup masalah daya, fisik fiber optik, dan jangkauan sinyal. Hasilnya berupa saran awal untuk pengguna rumahan, bukan keputusan teknis akhir untuk level enterprise.
