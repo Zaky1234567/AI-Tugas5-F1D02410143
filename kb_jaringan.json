@@ -1,0 +1,15 @@
+{
+  "judul": "Diagnosis Gangguan Koneksi Internet dan WiFi",
+  "batas": "Aturan berasal dari dokumentasi umum troubleshooting jaringan dan hanya mencakup masalah daya, fisik fiber optik, dan jangkauan sinyal. Hasilnya berupa saran awal, bukan keputusan teknis akhir.",
+  "sumber": {
+    "S1": "Dokumentasi Bantuan Windows (Memperbaiki masalah koneksi Wi-Fi di Windows), Microsoft, <https://support.microsoft.com/id-id/windows/memperbaiki-masalah-koneksi-wi-fi-di-windows-9424a1f7-6a3b-65a6-4d78-7f07eee84d2c>, diakses 12 Nov 2026",
+    "S2": "Panduan Gangguan Indihome (Arti Lampu Indikator Wi-Fi IndiHome yang Berkedip), Telkomsel, <https://www.telkomsel.com/jelajah/jelajah-lifestyle/arti-lampu-indikator-wi-fi-indihome-yang-berkedip-ih>, diakses 12 Nov 2026"
+  },
+  "aturan": [
+    {"id": "R1", "jika": ["lampu daya mati", "kabel adaptor longgar"], "mode": "atau", "maka": "router tidak menyala", "sumber": "S1"},
+    {"id": "R2", "jika": ["router tidak menyala", "internet terputus"], "mode": "dan", "maka": "masalah catu daya perangkat", "sumber": "S1"},
+    {"id": "R3", "jika": ["lampu LOS berkedip merah", "lampu PON mati"], "mode": "dan", "maka": "indikasi kabel optik putus", "sumber": "S2"},
+    {"id": "R4", "jika": ["indikasi kabel optik putus", "internet terputus"], "mode": "dan", "maka": "gangguan fisik jaringan ISP", "sumber": "S2"},
+    {"id": "R5", "jika": ["sinyal WiFi sangat lemah", "jarak perangkat jauh dari router"], "mode": "dan", "maka": "posisi berada di area blank spot", "sumber": "S1"}
+  ]
+}
